@@ -1,3 +1,191 @@
 body {
     padding-top: 5rem;
+    background-color: rgb(211, 211, 211);
+}
+#home-icon{
+    height: 25px;
+    width: 25px;
+}
+
+#form{
+    background-color: white;
+    padding: 50px;
+    padding-bottom: 100px;
+    padding-right: 25px;
+}
+
+#textarea{
+    height:15rem;
+}
+
+#rooms, #baths, #price, #selectfield,#location,#filefield{
+    width: 15rem;
+}
+#baths{
+    position: absolute;
+    top:32.6rem;
+    left: 40rem;
+}
+
+#selectfield{
+    position: absolute;
+    top: 36.4rem;
+    left: 40rem;
+}
+label[for=num_bath]{
+    position: absolute;
+    top: 31.1rem;
+    left: 40rem
+}
+
+label[for="prop_type"]{
+    position: absolute;
+    top: 35rem;
+    left: 40rem;
+}
+
+#addpropbtn{
+    position: absolute;
+    top: 49rem;
+}
+
+.prop-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+}
+
+.properties{
+    display: grid;
+    grid-template-rows: auto auto;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px 1px 1px 1px solid lightgray;
+    box-shadow: 1px 1px 5px;
+    align-items: center;
+    width: min-content;
+}
+
+.prop-pic{
+    height: 300px;
+    width: 450px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.prop-info{
+    padding: 10px;
+    padding-left: 25px;
+    
+}
+.icon{
+    height:20px;
+    width: 20px;
+}
+
+.location{
+    color: gray;
+    font-size: 13px;
+}
+
+.prop-price{
+    color: white;
+    font-weight: bold;
+    background-color: #516af5;
+    padding: 10px;
+    width: min-content;
+    border: 1px, 1px, 1px, 1px, solid, #516af5;
+    border-radius: 25px;
+}
+
+.viewbtn{
+    width: 450px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.property{
+    display:flex;
+    border: 1px 1px 1px 1px solid lightgray;
+    border-radius: 5px;
+    align-items: center;
+    width: min-content;
+    background-color: white;
+}
+.property-info{
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    width: 700px;
+}
+#prop-picture{
+    height:500px;
+    width:650px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#bedroom-pic, #bathroom-pic, #location-pic{
+    height: 15px;
+    width: 15px;
+}
+
+#type{
+    color: white;
+    position: absolute;
+    top: 10.7rem;
+    left: 60rem;
+    background-color: #ffc107;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px 1px 1px 1px solid #ffc107;
+    border-radius: 20px;
+    width: min-content;
+}
+#propprice{
+    position: absolute;
+    top: 10.7rem;
+    left: 47rem;
+    color: white;
+    background-color:#516af5;
+    border: 1px 1px 1px 1px solid #516af5;
+    border-radius: 20px;
+    padding: 10px;
+    width: min-content;
+}
+
+#bathroom{
+    position: absolute;
+    top: 28rem;
+    left: 60rem;
+}
+#bedroom{
+    position: absolute;
+    top: 28rem;
+    left: 46rem;
+}
+
+#location{
+    position: absolute;
+    top: 30rem;
+    left: 46rem;
+}
+
+#realtorbtn{
+    position: absolute;
+    top: 33rem;
+    left: 47rem;
+}
+#desc{
+    word-wrap: break-word;
+    padding-right: 80px;
+    padding-top: 50px;
+}
+
+h3{
+    position: absolute;
+    padding-bottom: 45px;
+    top: 7rem;
+    left: 46rem;
 }

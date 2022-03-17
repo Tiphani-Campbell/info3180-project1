@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <div class="centre-block">
+        <h2>Properties</h2>
+        {% include "flash_messages.html" %}
+        <div class="prop-grid">
+        {% for property in properties %}
+            <form action="{{ url_for('loadproperty', propertyid=property.id) }}" method="get">
+                <div class="properties">
+                    <div class="picture">
+                        <img class="prop-pic" src="{{ url_for('static',filename=property.photo) }}" alt="Property Photo for {{ property.title }}"/>
+                    </div>
+                    <div class="prop-info">
+                        <b><h4>{{ property.title }}</h4></b>
+                        <p class="location"><img class="icon" src="static/locationpin.png" alt="location pin image"/>{{ property.location }}</p>
+                        <p class="prop-price">{{ property.price | currencyFormat }}</p>
+                    </div>
+                    <div class="view-info">
+                        <button type="submit" class="btn btn-primary viewbtn">View Property</button>
+                    </div>
+                </div>
+            </form>
+        {% endfor %}
+        </div>
+    </div>
+{% endblock %}

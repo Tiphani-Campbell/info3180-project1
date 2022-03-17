@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block main %}
+    {% include "flash_messages.html" %}
+    <div class="property">
+        <div id="property-pic">
+            <img id="prop-picture" src="{{ url_for('static', filename=property.photo) }}" alt="Photo for {{ property.title }}">
+        </div>
+        <div class="property-info">
+            <b><h3>{{ property.title }}</h3></b>
+            <p id="propprice">{{ property.price | currencyFormat }}</p>
+            <p id="type">{{ property.proptype }}</p>
+            <p id="desc">{{ property.description }}</p>
+            <p id="bedroom"><img id="bedroom-pic" src="../static/bed.png" alt="bed icon">{{ property.no_of_bedrooms }} Bedrooms</p>
+            <p id="bathroom"><img id="bathroom-pic" src="../static/bathroom.png" alt="bath icon">{{ property.no_of_bathrooms }} Bathrooms</p>
+            <p id="location"><img id="location-pic" src="../static/locationpin.png" alt="location icon">{{ property.location }}</p>
+        </div>
+        <button id="realtorbtn" class="btn btn-primary">Email Realtor</button>
+    </div>
+{% endblock %}
