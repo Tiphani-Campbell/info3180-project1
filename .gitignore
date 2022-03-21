@@ -6,6 +6,9 @@ Thumbs.db
 *$py.class
 __pycache__
 
+# virtualenv
+.venv/
+venv/
 
 # nodejs
 node_modules
